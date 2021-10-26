@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Background="Gray" Height="500" Width="900">
+    <Grid x:Name="form" Height="471" Margin="0,0,0.333,-0.333" VerticalAlignment="Top" Background="#FFEEB003">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txtModuleCOde" HorizontalAlignment="Left" Height="23" Margin="143,-4,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtModuleName" HorizontalAlignment="Left" Height="23" Margin="143,27,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCredits" HorizontalAlignment="Left" Height="23" Margin="143,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtweeklyHours" HorizontalAlignment="Left" Height="23" Margin="143,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtSmesterWeeks" HorizontalAlignment="Left" Height="23" Margin="143,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Module Code" HorizontalAlignment="Left" Margin="15,-4,0,0" VerticalAlignment="Top"/>
+        <Label Content="Module Name" HorizontalAlignment="Left" Margin="15,24,0,0" VerticalAlignment="Top"/>
+        <Label Content="Credits" HorizontalAlignment="Left" Margin="15,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="Weekly Class Hours" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top"/>
+        <Label Content="Semester Class Weeks" HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnNew" Content=" INSERT" HorizontalAlignment="Left" Margin="-4,419,0,0" VerticalAlignment="Top" Width="141" Height="42" Click="btnNew_Clicked"/>
+        <Label Content="Start Date" HorizontalAlignment="Left" Margin="10,132,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dpStartDate" HorizontalAlignment="Left" Margin="143,133,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Self Study Per Week" HorizontalAlignment="Left" Margin="17,200,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSeflStudy" Content="." HorizontalAlignment="Left" Margin="563,192,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSelfStudy" Content="Calculate Self-Study " HorizontalAlignment="Left" Margin="143,170,0,0" VerticalAlignment="Top" Width="120" Height="25" Click="btnSelfStudy_Clicked"/>
+        <Label x:Name="lblHourssRemaining" Content="." HorizontalAlignment="Left" Margin="612,200,0,0" VerticalAlignment="Top"/>
+        <Label Content="Hours" HorizontalAlignment="Left" Margin="222,204,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.04,0.634"/>
+        <Button x:Name="btnDelete" Content=" DELETE" HorizontalAlignment="Left" Margin="143,419,0,10" Width="141" Click="btnDelete_Clicked"/>
+        <TextBox x:Name="txtSelfstudy" HorizontalAlignment="Left" Height="23" Margin="143,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="74" IsEnabled="False"/>
+        <Button x:Name="ntnUpdate" Content=" UPDATE" HorizontalAlignment="Left" Margin="290,419,0,11" Width="141" Click="btnUpdate_Clicked"/>
+        <Button x:Name="btnNew1" Content=" NEW" HorizontalAlignment="Left" Margin="437,419,0,12" Width="141" Click="btnNew1_Clicked"/>
+        <Button x:Name="btnView" Content="Go to Marks" HorizontalAlignment="Left" Margin="679,419,0,0" VerticalAlignment="Top" Width="185" Height="35" Click="btnView_Click"/>
+        <DataGrid x:Name="datagrid1" HorizontalAlignment="Left" Height="385" Margin="342,0,0,0" VerticalAlignment="Top" Width="522"/>
+        <Label Content="Hours Spent" HorizontalAlignment="Left" Margin="14,235,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtHoursSpent" HorizontalAlignment="Left" Height="23" Margin="113,238,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147"/>
+        <Label Content="Date" HorizontalAlignment="Left" Margin="14,272,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dpDate" HorizontalAlignment="Left" Margin="113,272,0,0" VerticalAlignment="Top" Width="147"/>
+        <Label Content="Hours Remaining" HorizontalAlignment="Left" Margin="14,354,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnHoursRemaining" Content="Shows Hours Remaining " HorizontalAlignment="Left" Margin="121,314,0,0" VerticalAlignment="Top" Width="139" Height="25" Click="btnHoursRemaining_Clicked"/>
+        <Label Content="Hours" HorizontalAlignment="Left" Margin="219,354,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRemainingHouurs" HorizontalAlignment="Left" Height="23" Margin="121,354,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="74" IsEnabled="False"/>
+
+
+
+    </Grid>
+
+</Window>
